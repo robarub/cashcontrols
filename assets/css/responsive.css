@@ -1,0 +1,111 @@
+@media (max-width: 991.98px) {
+  .login-page, .login-page-form {
+    background-size: 200% 100%;
+  }
+
+  .nav_bar_system {
+    height: initial;
+  }
+  .menu_lateral h5 {
+    margin-bottom: 10px;
+  }
+  .menu_lateral {
+    min-height: initial;
+    padding: 20px 40px;
+  }
+  .user-content {
+    padding-bottom: 12px;
+    padding-top: 0px;
+  }
+  .user-content > div {
+    margin-right: 10px;
+  }
+  .user-content > img {
+    width: 40px;
+  }
+  .user-content button {
+    margin: 0 10px;
+  }
+  .system-page .button-entry.mr-5 {
+    display: block;
+    margin-right: auto!important;
+    margin-left: auto!important;
+  }
+  .nav_bar_system .col-md-3 {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .input-group-prepend.calendario {
+    width: 55px;
+  }
+  .h-75{
+    height: auto !important;
+  }
+  .report button.go {
+   float: right;
+   margin-top: 15px;
+   margin-right: 5px;
+  }
+  .report button.order {
+    margin-bottom: 10px;
+  }
+  .report .wrapper-search{
+    overflow: scroll;
+    height: auto;
+    width: 100%;
+  }
+  .activity .date-activity{
+    margin-top: 15px;
+  }
+  .activity .wrapper-commentary{
+    position: relative;
+    margin-top: 25px;
+  }
+  .admin .cat-detail{
+    margin-top: 30px
+  }
+  .admin .select-category{
+    width: 100%;
+  }
+ .admin .group-checks {
+    margin-left: 15px;
+    padding-top: 7px;
+ }
+ .admin .detail{
+   width: 100%;
+   position: relative !important;
+   margin-left: 15px;
+   top: 0;
+   left: 0;
+ }
+ .admin .button-save{
+   margin-left: 0px !important;
+ }
+ .admin .select-category .form-check{
+   z-index: 9999;
+ }
+ .message{
+    top: 40%;
+    left: 20%;
+  }
+  .message.two{
+    top: 40%;
+    left: 6%;
+  }
+}
+@media (min-width: 374px) and (max-width: 415px) {
+  .login-page-form .input-group-prepend img{
+    max-width: 60px !important;
+    max-height: 60px !important;
+  }
+  .message{
+    top: 40%;
+    left: 20%;
+  }
+  .message.two{
+    top: 40%;
+    left: 6%;
+  }
+}
