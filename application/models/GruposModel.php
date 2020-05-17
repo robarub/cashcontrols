@@ -58,6 +58,18 @@ class GruposModel extends CI_Model
 		return $consulta->result();
 	}
 
+	public function get_by_movimiento($idMovimiento){
+		$this->db->select('grupos.nombre,
+							grupos.id_grupo,
+							tipo_movimiento.movimiento');
+		$this->db->from($this->tabla);
+		$this->db->join("tipo_clasificacion","grupos.id_tipo_clasificacion = tipo_clasificacion.id_clasificacion");
+		$this->db->join("tipo_movimiento","tipo_clasificacion.id_tipo_movimiento = tipo_movimiento.id_movimiento");
+		$this->db->where("tipo_movimiento.id_movimiento", $idMovimiento);
+		$consulta = $this->db->get();
+		return $consulta->result();
+	}
+
 
 
 	/*public function join($concepto, $accion, $movimiento){

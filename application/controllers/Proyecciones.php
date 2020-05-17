@@ -11,12 +11,23 @@ class Proyecciones extends CI_Controller {
 		$this->load->helper('form');
 		$this->hoy = date("Y-m-d");
 		$this->load->library('session');
-
+		$this->load->Model("GruposModel");
+		$this->load->Model("SiglasModel");
 		$this->load->Model('ProyeccionesModel');
 	}
 
 	public function index(){
-		$this->load->view("proyecciones");
+		$dataGruposIngresos = $this->GruposModel->get_by_movimiento(1);
+		foreach ($dataGruposIngresos as $gi){
+			$dataSiglaPorGrupo = $this->SiglasModel->get_by_grupo($gi->id_grupo);
+			$gi->siglas = $dataSiglaPorGrupo;
+		}
+
+		$data=array(
+			"gruposIngresos"=>$dataGruposIngresos
+		);
+
+		$this->load->view("proyecciones", $data);
 	}
 
 }

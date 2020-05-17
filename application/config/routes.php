@@ -57,6 +57,7 @@ $route['cuentas/crear'] = 'cuentas/crear';
 $route['insert_cuenta'] = 'cuentas/insert';
 
 #Saldos
+$route['actividades/proyecciones'] = 'proyecciones/index';
 
 #Categorias
 $route['obtiene_categoria'] = 'categorias/get';

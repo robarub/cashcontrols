@@ -31,7 +31,7 @@
 	</div>
 	<div class="concept my-2">
 		<i class="ml-4 icon bullet1"></i>
-		<span>Diario</span>
+		<span><a href="<?php echo base_url();?>actividades/proyecciones" style="color: white !important;">Proyecciones</a></span>
 	</div>
 	<div class="concept my-2">
 		<i class="ml-4 icon bullet2"></i>
